@@ -11,6 +11,25 @@ on pra.pedido (numCasa)
 
 */
 --Criação dos TRIGGERS
+--Criando Trigger para bloquear uma compra de um produto <= 5 no estoque, já que esses 5 são de mostruário e só podem ser vendidos na loja física
+    Create or alter Trigger pra.acabouProduto on pra.pedido for insert,update as
+    BEGIN
+        Declare @qtdEstoque int, @qtdPedida int
+        select @qtdPedida = qtd_Comprada from inserted
+        select @qtdEstoque = QtdEstoque from pra.produto
+
+        if(@qtdEstoque<=5||@qtdEstoque<@qtdPedida)
+        begin
+            RAISERROR('Quantidade em estoque não disponível',15,1)
+        end
+        else
+        begin
+            print ("Venda efetivada com sucesso!!")
+        end
+    END
+
+
+
 --Criação das Views
 
     CREATE VIEW pra.quantasVendasProdutoX
@@ -54,7 +73,6 @@ END
 
 
 
-/*
 --Criação dos Stored Procedures
 --INSERIR
 --Recebe como parametro os valores para incluir o funcionário
@@ -76,9 +94,6 @@ BEGIN   --Caso não exista um funcionário com o id apresentado inserir
     else -- Caso houver anuncie o ERRO
         RAISERROR ('id de Funcionário já existe no banco de Dados, ARRUME!!',16,2)
 END
-
-
-
 --EXCLUIR
 CREATE or ALTER PROCEDURE pra.excluirFuncionario
     @idFunc char(3)
