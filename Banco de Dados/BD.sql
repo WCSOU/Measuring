@@ -39,9 +39,7 @@ select
 f.fFirNome + ' '+ f.fUltNome as 'Funcinário', COUNT(p.idVenda)  as '#Vendas'
 from
 (pra.Funcionario as f join pra.Pedido as p on f.idFunc = p.idFunc)
-where
-p.qtd_Comprada> 20
-GROUP BY
+GROUP BY	
 f.fFirNome,f.fUltNome,p.idVenda
 
 
