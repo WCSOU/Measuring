@@ -23,6 +23,7 @@ Create Table pra.Funcionario (
     salario int not null,
     nivelPrestigio TINYINT not NULL
 );
+ALTER TABLE pra.Funcionario ADD senha NCHAR not null;
 
 Create TABLE pra.Produto(
     idProd SMALLINT PRIMARY KEY not null,
