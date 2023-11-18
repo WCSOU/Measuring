@@ -50,9 +50,10 @@ CREATE TABLE pra.Pedido (
     CEP char (8) not null,
     numCasa SMALLINT not null,
     idFunc char (3) not null ,
-    idVenda char(5) primary key not null,
+    idVenda int primary key IDENTITY not null,
 
     FOREIGN KEY (CPF_Cliente) REFERENCES pra.Cliente (CPF_Cliente),
     FOREIGN key (idProd) REFERENCES pra.Produto (idProd),
     FOREIGN KEY (idFunc) REFERENCES pra.Funcionario (idFunc)
 );
+

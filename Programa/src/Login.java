@@ -26,6 +26,7 @@ public class Login extends JPanel implements ActionListener {
 
         textArea = new JTextArea(25, 20);
         textArea.setEditable(false);
+
         JScrollPane scrollPane = new JScrollPane(textArea);
 
         //Add Components to this panel.
@@ -45,7 +46,7 @@ public class Login extends JPanel implements ActionListener {
 
         //Adcionando para ele ler a função this/actionPerformed
         btn1.addActionListener(this);
-        //Adcionando outra função
+
 
     }
 
