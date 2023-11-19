@@ -2,7 +2,7 @@ import React from 'react'
 
 function ArranjoPage() {
     return (
-        <div>arranjoPage</div>
+        <h1>arranjoPage</h1>
     )
 }
 

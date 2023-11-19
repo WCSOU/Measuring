@@ -7,7 +7,6 @@ header {
     align-items: center;
     justify-content: center;
     margin: 0px;
-    background-color: transparent;
 }
 
 .logo {
@@ -61,13 +60,17 @@ header {
 }
 
 .loginText{
-    font-family: sans-serif;
+    width: 160px;
+    height: 60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:#414141;
     font-size: 25;
     padding: 9px;
     padding-top: 8px;
-    width: 160px;
-    height: 60px;
+}
+
+.loginText a{
+    color:#414141;  
 }
 
 .carinho{

@@ -1,4 +1,5 @@
 import style from './header.module.css'
+import { Link } from 'react-router-dom'
 import logo from '../../img/logo.png'
 import lupa from '../../img/lupa-preta.png'
 import perfil from '../../img/perfil.png'
@@ -24,7 +25,7 @@ function HeaderComponent(){
                 </div>
                 <div className={style.loginText}>
                     Bem vindo(a)<br/>
-                    Entrar ou Cadastrar
+                    <Link to="/Login">Entrar</Link> ou <Link to="/Cadastro">Cadastrar</Link>
                 </div>
                 <div className={style.carinho}>
                     <img src={carrinho} width="55px" height="55px"/>

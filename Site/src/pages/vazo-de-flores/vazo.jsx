@@ -2,7 +2,7 @@ import React from 'react'
 
 function VazoPage() {
     return (
-        <div>vazoPage</div>
+        <h1>vazoPage</h1>
     )
 }
 

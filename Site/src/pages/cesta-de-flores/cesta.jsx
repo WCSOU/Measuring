@@ -2,7 +2,7 @@ import React from 'react'
 
 function CestaPage() {
     return (
-        <div>cestaPage</div>
+        <h1>cestaPage</h1>
     )
 }
 

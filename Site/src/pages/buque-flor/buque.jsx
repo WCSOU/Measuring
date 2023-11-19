@@ -2,7 +2,7 @@ import React from 'react'
 
 function BuquePage() {
     return (
-        <div>buquePage</div>
+        <h1>buquePage</h1>
     )
 }
 

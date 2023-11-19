@@ -2,7 +2,7 @@ import React from 'react'
 
 function PresentesPage() {
     return (
-        <div>presentesPage</div>
+        <h1>presentesPage</h1>
     )
 }
 
