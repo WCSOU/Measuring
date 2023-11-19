@@ -2,9 +2,10 @@ import LoginComponente from "../../components/login/login";
 
 function LoginPage(){
     return(
-        <>
-        <LoginComponente/>
-        </>
+        <main>
+            <LoginComponente/>
+        </main>
+        
 
     )
 }

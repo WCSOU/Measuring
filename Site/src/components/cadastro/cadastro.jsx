@@ -3,7 +3,7 @@ import style from './cadastro.module.css'
 
 function CadastroComponente(){
     return(
-        <body>
+        <main>
             <div className={style.container}>
                 
                 <div className={style.box}>
@@ -23,7 +23,7 @@ function CadastroComponente(){
                     <p>já tem um login? <Link to="/Login">clique aqui!</Link></p>
                 </div>
             </div>
-        </body>
+        </main>
     )
 }
 

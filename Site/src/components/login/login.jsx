@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function LoginComponente(){
     return(
-        <body>
+        <main>
             <div className={style.container}>
                 <div className={style.box}>
                     <h1>Login</h1>
@@ -17,7 +17,7 @@ function LoginComponente(){
                     <p>não tem um cadastro? <Link to="/Cadastro">clique aqui!</Link></p>
                 </div>
             </div>
-        </body>
+        </main>
     )
 }
 
