@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import HomePage from './pages/home/home';
+import ProdutoPage from './pages/produtoDetalhes/produto';
 import CadastroPage from './pages/cadastro/cadastro';
 import LoginPage from './pages/login/login';
 import ErroPage from './pages/erro/erroPage';
@@ -23,6 +24,10 @@ const Router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage/>
+      },
+      {
+        path: "/:id",
+        element: <ProdutoPage/>
       },
       {
         path: "/Cadastro",
