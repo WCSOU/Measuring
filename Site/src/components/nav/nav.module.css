@@ -1,4 +1,4 @@
-nav{
+/* .barra{
     flex: 1 1 100vw;
     height: 54px;
     display: flex;
@@ -9,18 +9,39 @@ nav{
     margin: 0px;
 }
 
-/* a{
+.text{
     display: flex;
     width: 12rem;
     height: 3.3125rem;
-    flex-direction: column;
     justify-content: center;
-    color: #FFF;
-    text-align: center;
+    color: #000000;
     font-family: Inter;
     font-size: 0.9375rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-decoration-line: none;
-}    */
+}  */
+
+nav
+.barra{
+    flex: 1 1 100vw;
+    height: 54px;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #414141;
+    box-shadow: 0px 3px 10px 0px rgb(0, 0, 0);
+}
+.barra a{
+    margin: 5%;
+    font-size: 10pt;
+    color: white; 
+}
+
+.text{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+}
