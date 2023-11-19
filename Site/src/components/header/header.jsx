@@ -9,7 +9,7 @@ function HeaderComponent(){
     return (
         <header>
             <div classNameName={style.logo}>
-                <img src={logo} width="208px" height="118" />
+                <Link to="/"><img src={logo} width="208px" height="118" /></Link>
             </div>
             <div className={style.busca}>
                 <div className={style.campoBusca}>
