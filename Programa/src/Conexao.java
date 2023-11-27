@@ -21,7 +21,7 @@ public class Conexao {
             "Erro de Conexão", JOptionPane.ERROR_MESSAGE);
         }
         try {
-            contato = DriverManager.getConnection(url, "BD23334","BD23334")
+            contato = DriverManager.getConnection(url, "BD23334","BD23334");
         } catch (SQLServerException e) {
             JOptionPane.showMessageDialog(null,"Erro"+ e.getMessage(),
                     "Erro de Conexão", JOptionPane.ERROR_MESSAGE);
